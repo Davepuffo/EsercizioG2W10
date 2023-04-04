@@ -47,7 +47,7 @@ const CommentArea = ({ asin }) => {
     <div className="text-center">
       {isLoading && <Loading />}
       {isError && <Error />}
-      <AddComment asin={asin.asin} />
+      <AddComment asin={asin} />
       <CommentList commentsToShow={comments} />
     </div>
   )
